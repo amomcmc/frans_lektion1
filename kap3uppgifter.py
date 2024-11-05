@@ -1,24 +1,10 @@
 # Fråga 1 
-for siffra in range(1, 101):
-    if siffra % 3 == 0 and siffra % 5 == 0:
+for siffra in range(1, 101): # här körs loopen
+    if siffra % 3 == 0 and siffra % 5 == 0: # letar först efter om siffra är delbar med både 3 och 
         print("FizzBuzz")
-    elif siffra % 3 == 0:
+    elif siffra % 3 == 0: # om inte siffra är delbar med båda, leta efter siffror som är delbara med 3
         print("Fizz")
-    elif siffra % 5 == 0:
+    elif siffra % 5 == 0: # letar efter siffror som är delbara med 5
         print("Buzz")
     else: 
-        print(siffra)
-        
-        
-# for i in range(1, 101):    # Loopa från 1 till 100
-#     if i % 3 == 0 and i % 5 == 0:    # Om talet är delbart med både 3 och 5
-#         print("FizzBuzz")
-#     elif i % 3 == 0:    # Om talet är delbart med 3
-#         print("Fizz")
-#     elif i % 5 == 0:    # Om talet är delbart med 5
-#         print("Buzz")
-#     else:
-#         print(i)    # Om inget av ovanstående gäller, skriv ut talet självt
-
-    
-        
+        print(siffra) # om allt ovanstående är False körs denna print ut som bara skriver ut en siffra
